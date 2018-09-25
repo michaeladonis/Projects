@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar(char c);
+void	ft_putchar(char c);
 
-void ft_replaceletter(int i, int row, char letter, int col, char letter2, char letter3)
+void	ft_replaceletter(int i, int row, char let, int col, char let2, char let)
 {
 	if (i == 1)
 		ft_putchar(letter);
@@ -22,18 +22,16 @@ void ft_replaceletter(int i, int row, char letter, int col, char letter2, char l
 		ft_putchar(letter2);
 }
 
-void ft_addingfunction(int col, int row, char letter, char letter2, char letter3)
+void	ft_addingfunction(int i, int col, int row, char let, char let2, char let3)
 {
-int i;
-i = 1;
-while (i <= col)
+	while (i <= col)
 	{
-	ft_replaceletter(i, row, letter, col, letter2, letter3);
-	i++;
+		ft_replaceletter(i, row, let, col, let2, let3);
+		i++;
 	}
 }
 
-void ft_createrow(int indicator, int col, int row)
+void	ft_createrow(int indicator, int col, int row)
 {
 	int i;
 
@@ -48,7 +46,7 @@ void ft_createrow(int indicator, int col, int row)
 	}
 	if (indicator == 1)
 	{
-		ft_addingfunction(col, row,'B', ' ', 'B');
+		ft_addingfunction(col, row, 'B', ' ', 'B');
 	}
 	if (indicator != 2)
 		ft_putchar('\n');
