@@ -55,7 +55,7 @@ void ft_createrow(int indicator, int col, int row)
         ft_putchar('\n');
 }
 
-void rush(int col, int row)
+void rush03(int col, int row)
 {
     int i;
 
