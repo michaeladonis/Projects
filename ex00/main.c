@@ -14,8 +14,11 @@
 #include "ft_putchar.h"
 #include "rush03.h"
 
+
+
+
 int		main(void)
 {
-	rush03(5, 1);
+	rush03(5, 5);
 	return (0);
 }

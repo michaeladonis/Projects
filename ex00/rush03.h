@@ -12,11 +12,11 @@
 
 void	ft_putchar(char c);
 
-void	ft_replaceletter(int i, char let, int col, char let2, char let3)
+void	ft_replaceletter(int i, int row, char let, int col, char let2, char let3)
 {
 	if (i == 1)
 		ft_putchar(let);
-	else if (i == col)
+	else if (i == col && row != 0)
 		ft_putchar(let3);
 	else
 		ft_putchar(let2);
@@ -29,7 +29,7 @@ void	ft_addingfunction(int col, int row, char let, char let2, char let3)
 	i = 1;
 	while (i <= col)
 	{
-		ft_replaceletter(row, let, col, let2, let3);
+		ft_replaceletter(i, row, let, col, let2, let3);
 		i++;
 	}
 }
